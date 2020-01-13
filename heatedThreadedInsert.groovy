@@ -12,7 +12,7 @@ CSG generate(){
 	println "Measurment diameterValue =  "+diameterValue
 	println "Measurment installLengthValue =  "+installLengthValue
 	// Stub of a CAD object
-	CSG part = new Cube().toCSG()
+	CSG part = new Cylinder(diameterValue/2,installLengthValue).toCSG()
 	return part
 		.setParameter(size)
 		.setRegenerate({generate()})
