@@ -9,8 +9,8 @@ CSG generate(){
 
 	def diameterValue = measurments.diameter
 	def installLengthValue = measurments.installLength
-	println "Measurment diameterValue =  "+diameterValue
-	println "Measurment installLengthValue =  "+installLengthValue
+	//println "Measurment diameterValue =  "+diameterValue
+	//println "Measurment installLengthValue =  "+installLengthValue
 	// Stub of a CAD object
 	CSG part = new Cylinder(diameterValue/2,installLengthValue).toCSG()
 	return part
